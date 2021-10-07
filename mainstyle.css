@@ -1,16 +1,61 @@
+/* Global-------------------------*/
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    display: flex
+    background-color: ghostwhite;
+    display: flex;
 }
 
-#lateral{
-    background-color: #2b00ff;
+header{
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+#menu{
+    background-color: navy;
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 100%;
 }
 
 #main{
-    background-color: #fffffd;
+    position: fixed;
+    left: 300px;
+    padding: 2rem;
+}
+
+#main div{
+    padding: 1rem;
+}
+/* Titles-------------------------*/
+#menu h2{
+    margin: 0 2rem;
+    color: whitesmoke;
+}
+
+#main h2 a{
+    color: steelblue;
+    padding-bottom: 0.5rem;
+}
+/* Links & Buttons-----------------*/
+ul{
+    margin-top: 0.5rem;
+}
+li{
+    padding: 0 1.5rem;
+}
+li a{
+    color:azure;
+}
+a{
+    text-decoration: none;
+    color: midnightblue;
+}
+a:hover, #main h2 a:hover{
+    color: aqua;
 }
