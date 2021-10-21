@@ -8,6 +8,53 @@ export const validateFields = {
       return true
     }
   },
+  validateCPF(cpf) {
+    let inCpf = String(cpf.value)
+    if (inCpf === '') {
+      return false
+    } else {
+      inCpf = inCpf.replace(/\D/g, '')
+      console.log(inCpf)
+      let inCpfDigits = inCpf.split('')
+      let soma = 0
+      let firstCertificateDigit = 0
+      let secondCertificateDigit = 0
+
+      for (let i = 0; i < inCpfDigits.lenght - 2; i++) {
+        soma += Number(inCpfDigits[i]) * (10 - i)
+      }
+      console.log(`Soma: ${soma}`)
+      if (soma % 11 === 0) {
+        firstCertificateDigit = 0
+      } else if (soma % 11 === 1) {
+        firstCertificateDigit = 1
+      } else {
+        firstCertificateDigit = 11 - (soma % 11)
+      }
+      console.log(`Primeiro Digito Verificador: ${firstCertificateDigit}`)
+      soma = 0
+      for (let i = 0; i < inCpfDigits.lenght - 1; i++) {
+        soma += Number(inCpfDigits[i]) * (11 - i)
+      }
+
+      if (soma % 11 === 0) {
+        secondCertificateDigit = 0
+      } else if (soma % 11 === 1) {
+        secondCertificateDigit = 1
+      } else {
+        secondCertificateDigit = 11 - (soma % 11)
+      }
+      console.log(`Primeiro Digito Verificador: ${secondCertificateDigit}`)
+      if (
+        inCpfDigits[9] == firstCertificateDigit &&
+        inCpfDigits[10] == secondCertificateDigit
+      ) {
+        return true
+      } else {
+        return false
+      }
+    }
+  },
   validateEmail(email) {
     let inEmail = String(email.value)
 
@@ -66,6 +113,10 @@ export const validateFields = {
       name.focus()
       return false
     }
+    if (!validateCPF(cpf)) {
+      cpf.classList.add('errorInput')
+      return false
+    }
     if (!this.validateBirthDate(date)) {
       date.classList.add('errorInput')
       return false
@@ -83,47 +134,5 @@ export const validateFields = {
       return false
     }
     return true
-  }
-}
-
-export function validateCPF(cpf) {
-  let soma = 0
-  let firstCertificateDigit = 0
-  let secondCertificateDigit = 0
-
-  cpf = cpf.replace(/\D/g, '')
-  console.log(`Cpf: ${cpf}`)
-
-  for (let i = 0; i < cpf.lenght - 2; i++) {
-    soma += Number(cpf.substring(i, i + 1)) * (10 - i)
-  }
-  console.log(`Soma: ${soma}`)
-  if (soma % 11 === 0) {
-    firstCertificateDigit = 0
-  } else if (soma % 11 === 1) {
-    firstCertificateDigit = 1
-  } else {
-    firstCertificateDigit = 11 - (soma % 11)
-  }
-  console.log(`Primeiro Digito Verificador: ${firstCertificateDigit}`)
-  for (let i = 0; i < cpf.lenght - 1; i++) {
-    soma += Number(cpf.substring(i, i + 1)) * (11 - i)
-  }
-
-  if (soma % 11 === 0) {
-    secondCertificateDigit = 0
-  } else if (soma % 11 === 1) {
-    secondCertificateDigit = 1
-  } else {
-    secondCertificateDigit = 11 - (soma % 11)
-  }
-  console.log(`Primeiro Digito Verificador: ${secondCertificateDigit}`)
-  if (
-    cpf.substring(10, 11) === firstCertificateDigit &&
-    cpf.substring(11, 12) === secondCertificateDigit
-  ) {
-    return true
-  } else {
-    return false
   }
 }
