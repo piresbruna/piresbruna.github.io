@@ -1,61 +1,64 @@
 /* Global-------------------------*/
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: ghostwhite;
-    display: flex;
+body {
+  background-color: ghostwhite;
+  display: grid;
+  place-items: center;
+  height: 100%;
 }
 
-header{
-    color: white;
-    padding: 2rem;
-    text-align: center;
+header {
+  color: white;
+  padding: 2rem;
+  width: 100vw;
+  text-align: center;
+  background-color: navy;
 }
 
-#menu{
-    background-color: navy;
-    position: fixed;
-    top: 0;
-    width: 300px;
-    height: 100%;
+main {
+  max-width: 80vw;
+  display: flex;
 }
 
-#main{
-    position: fixed;
-    left: 300px;
-    padding: 2rem;
+menu {
+  display: grid;
+  place-items: center;
+  background: lightsteelblue;
 }
 
-#main div{
-    padding: 1rem;
-}
-/* Titles-------------------------*/
-#menu h2{
-    margin: 0 2rem;
-    color: whitesmoke;
+section {
+  margin-right: 3rem;
+  margin-left: 1rem;
 }
 
-#main h2 a{
-    color: steelblue;
-    padding-bottom: 0.5rem;
+.description {
+  margin-top: 0.7rem;
 }
+
 /* Links & Buttons-----------------*/
-ul{
-    margin-top: 0.5rem;
+ul {
+  list-style: none;
 }
-li{
-    padding: 0 1.5rem;
+li {
+  margin: 0.5rem;
+  padding: 0.25rem;
+  background: navy;
+  border-radius: 0.3rem;
+  text-align: center;
 }
-li a{
-    color:azure;
+li a {
+  color: azure;
 }
-a{
-    text-decoration: none;
-    color: midnightblue;
+a {
+  text-decoration: none;
+  color: midnightblue;
 }
-a:hover, #main h2 a:hover{
-    color: aqua;
+
+a:hover,
+main h2 a:hover {
+  color: aqua;
 }

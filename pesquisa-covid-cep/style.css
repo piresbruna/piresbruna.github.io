@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: url('http://lorempixel.com/1280/1280/business/') no-repeat
+    center/cover;
+}
+
+h1 {
+  margin: 2rem;
+  padding: 1rem;
+  color: navy;
+  text-align: center;
+  background: whitesmoke;
+  border-radius: 0.5rem;
+}
+
+main {
+  background-color: lightyellow;
+  padding: 0 2rem;
+  border-radius: 0.7rem;
+  color: #333;
+}
+
+div > h3 {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  justify-items: center;
+}
+
+input {
+  height: 1.25rem;
+  border-radius: 0.3rem;
+  border-color: gray;
+  border-style: solid;
+}
+
+button {
+  margin: 2rem 0;
+  padding: 0.3rem;
+  width: fit-content;
+  background: lightgreen;
+  color: darkgreen;
+  border-style: solid;
+  border-color: green;
+  border-radius: 0.3rem;
+}
+
+div#results {
+  margin-bottom: 2rem;
+  display: grid;
+  place-items: center;
+}
+
+ul {
+  margin-top: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-top: 0.5rem;
+}

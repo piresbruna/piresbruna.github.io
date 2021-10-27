@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Pesquisa COVID-19</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pesquise os dados sobre a COVID-19 do seu estado.</h1>
+    </header>
+    <main>
+      <div>
+        <h3>Informe um CEP:</h3>
+        <form id="cep-form">
+          <input id="cep" type="text" placeholder="00000-000" data-js="cep" />
+          <button type="submit">Pesquisar</button>
+        </form>
+      </div>
+      <div id="results"></div>
+    </main>
+    <script type="module" src="./mainscript.js"></script>
+  </body>
+</html>
