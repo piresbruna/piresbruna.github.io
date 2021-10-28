@@ -8,7 +8,7 @@ export class Person {
     this.cep = cep
   }
 
-  printName() {
-    console.log(this.nome)
+  registerSuccess() {
+    alert(`${this.nome} foi cadastrado com sucesso!`)
   }
 }
