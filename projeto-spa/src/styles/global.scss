@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  justify-content: center;
+  body {
+    //background-color: #200030;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wizardingworld.com%2Fquiz%2Fthe-hogwarts-castle-quiz&psig=AOvVaw3Xmcqdgb_d6xZNCKnLDfkC&ust=1639090772361000&source=images&cd=vfe&ved=2ahUKEwjiw5mLp9X0AhUtRLgEHf1QDdkQjRx6BAgAEAk');
+
+    header {
+      display: flex;
+      padding: 1.5rem;
+      background-color: black;
+      align-items: center;
+
+      h1 {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        color: #9c00eb;
+      }
+
+      img {
+        margin: 0 2rem;
+        height: 8rem;
+        width: 8rem;
+      }
+    }
+
+    main {
+      display: grid;
+      align-content: center;
+
+      h3 {
+        font-size: 1.3rem;
+        color: azure;
+        //display: flex;
+        margin-top: 1.5rem;
+        justify-self: center;
+      }
+
+      button {
+        font-size: 0.95rem;
+        border: solid;
+        border-color: black;
+        border-width: 0.15rem;
+        border-radius: 0.25rem;
+      }
+      .buttongroup {
+        margin-top: 1rem;
+        display: flex;
+
+        button {
+          margin: 0 1rem;
+          height: 2rem;
+          width: 6rem;
+        }
+
+        button#red {
+          background-color: red;
+          color: gold;
+        }
+
+        button#yellow {
+          background-color: gold;
+          color: brown;
+        }
+
+        button#blue {
+          background-color: blue;
+          color: #000432;
+        }
+
+        button#green {
+          background-color: green;
+          color: silver;
+        }
+      }
+
+      button#hogwarts {
+        display: flex;
+        justify-self: center;
+        padding-top: 0.4rem;
+        margin: 1rem;
+        height: 2rem;
+        width: 10rem;
+      }
+    }
+  }
+}
