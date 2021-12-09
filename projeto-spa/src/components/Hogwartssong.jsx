@@ -1,10 +1,13 @@
 import '../styles/song.scss'
+import parchment from '../../public/parchment.png'
 
 export function Hogwartssong(props){
-  
+  const style = {
+    backgroundImage: `url(${parchment})`,
+    backgroundRepeat: 'no-repeat'}
   if(props.song == 'hogwarts'){
     return(
-      <div className="song">
+      <div className="song" style={style}>
         <h2>Welcome to Hogwarts!</h2>
         <p>
           Hogwarts, Hogwarts, Hoggy Warty Hogwarts,<br />
@@ -25,7 +28,7 @@ export function Hogwartssong(props){
   }
   else if(props.song == 'red'){
     return(
-      <div className="song">
+      <div className="song" style={style}>
         <p>
           You might belong in Gryffindor,<br/>
           Where dwell the brave at heart,<br/>
@@ -37,7 +40,7 @@ export function Hogwartssong(props){
   }
   else if(props.song == 'yellow'){
     return(
-      <div className="song">
+      <div className="song" style={style}>
         <p>
           You might belong in Hufflepuff,<br/>
           Where they are just and loyal,<br/>
@@ -49,7 +52,7 @@ export function Hogwartssong(props){
   }
   else if(props.song == 'blue'){
     return(
-      <div className="song">
+      <div className="song" style={style}>
         <p>
           Or yet in wise old Ravenclaw,<br/>
           If you're a ready mind,<br/>
@@ -61,7 +64,7 @@ export function Hogwartssong(props){
   }
   else if(props.song == 'green'){
     return(
-      <div className="song">
+      <div className="song" style={style}>
         <p>
           Or perhaps in Slytherin,<br/>
           You'll make your real friends,<br/>

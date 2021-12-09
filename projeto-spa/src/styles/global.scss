@@ -5,8 +5,8 @@
   box-sizing: border-box;
   justify-content: center;
   body {
-    //background-color: #200030;
-    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wizardingworld.com%2Fquiz%2Fthe-hogwarts-castle-quiz&psig=AOvVaw3Xmcqdgb_d6xZNCKnLDfkC&ust=1639090772361000&source=images&cd=vfe&ved=2ahUKEwjiw5mLp9X0AhUtRLgEHf1QDdkQjRx6BAgAEAk');
+    background-color: #200030;
+    //background-image: url('../../public/Hogwarts.jpg');
 
     header {
       display: flex;
@@ -34,8 +34,7 @@
       h3 {
         font-size: 1.3rem;
         color: azure;
-        //display: flex;
-        margin-top: 1.5rem;
+        margin-top: 0.2rem;
         justify-self: center;
       }
 
