@@ -1,4 +1,3 @@
-import Hogwarts from '../../public/Hogwarts.jpg'
 import hogwarts from '../img/hogwarts.png'
 import gryffindor from '../img/gryffindor.png'
 import hufflepuff from '../img/hufflepuff.png'
@@ -8,7 +7,7 @@ import {Hogwartssong} from './Hogwartssong.jsx'
 import { Header } from './Header'
 import { useState } from 'react'
 
-export function Background(){
+export function Changehouse(){
   const [song, setSong] = useState('hogwarts')
   const [house, setHouse] = useState({house: hogwarts, description: 'Hogwarts Crest'})
 
@@ -32,12 +31,7 @@ export function Background(){
   }
   
   return(
-    <div style={{ 
-      backgroundImage: `url(${Hogwarts})`,
-      backgroundRepeat: 'no-repeat center/cover',
-      width:'100vw',
-      height: '100vh'
-    }}>
+    <>
       <Header house={house}/>
       <main>
         <Hogwartssong song={song}/>
@@ -62,6 +56,6 @@ export function Background(){
             onClick={() => chooseHouse('hogwarts')}
           >Back to Hogwarts</button>
        </main>
-    </div>
+    </>
   )
 }

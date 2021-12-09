@@ -4,6 +4,7 @@ import parchment from '../../public/parchment.png'
 export function Hogwartssong(props){
   const style = {
     backgroundImage: `url(${parchment})`,
+    //backgroundImage: 'url(http://localhost:8080/parchment.png)',
     backgroundRepeat: 'no-repeat'}
   if(props.song == 'hogwarts'){
     return(
