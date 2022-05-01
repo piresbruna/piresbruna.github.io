@@ -14,10 +14,10 @@ Repositório de projetos realizados para aulas da faculdade e cursos/vídeo-aula
 - **Tema:** Formulário com campos de nome, cpf, data de nascimento, e-mail, telefone e CEP
 #### Crachá digital mobile (Rocketseat - NLW-Heat)
 - **Pasta:** nlw-heat
-- **Tema:** crachá (para mobile) com perfil público do GitHub e links para redes socias
+- **Tema:** crachá (para mobile) com perfil público do GitHub e links para redes sociais
 #### Formulário de pesquisa de dados via APIs (Faculdade - IFSP)
 - **Pasta:** pesquisa-covid-cep
-- **Tema:** resgata os dados de casos, mortes, casos suspeitos de COVID-19 de acordo com o CEP
+- **Tema:** resgata os dados estaduais brasileiros de casos, mortes e casos suspeitos de COVID-19 de acordo com o CEP
 #### Pequeno projeto com conceitos de SPA (Faculdade - IFSP)
 - **Pasta:** projeto-spa
 - **Tema:** Hogwarts e suas casas (Harry Potter)
